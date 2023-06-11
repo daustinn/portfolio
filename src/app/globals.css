@@ -2,10 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --secondary-glow: linear-gradient(
+    to bottom right,
+    rgba(255, 86, 1, 0),
+    rgba(255, 132, 1, 0),
+    rgba(255, 128, 1, 0.3)
+  );
+  --body-background: #050505;
+  --primary-glow: radial-gradient(rgba(255, 128, 1, 0.3), rgba(255, 175, 1, 0));
+  --scrollbar-tumbl: #b3b3b369;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,10 +30,122 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: rgb(var(--background-start-rgb));
+  font-family: var(--font-inter), ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Noto Color Emoji';
+}
+
+/* my styles */
+.page_center__diPtZ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 4rem 0;
+}
+.page_center__diPtZ::before {
+  content: '';
+  left: 50%;
+  position: absolute;
+  filter: blur(45px);
+  transform: translateZ(0);
+  background: var(--secondary-glow);
+  border-radius: 50%;
+  width: 480px;
+  height: 360px;
+  margin-left: -400px;
+}
+.page_center__diPtZ::after {
+  content: '';
+  left: 50%;
+  position: absolute;
+  filter: blur(45px);
+  transform: translateZ(0);
+  background: var(--primary-glow);
+  width: 240px;
+  height: 180px;
+  z-index: -1;
+}
+.shake-left-right:hover {
+  animation: shake-left-2 0.8s linear both;
+}
+.shake-left-right {
+  animation: shake-left-right 0.8s linear both;
+}
+@keyframes shake-left-right {
+  0%,
+  100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+  }
+  10% {
+    transform: rotate(8deg);
+  }
+  20%,
+  40%,
+  60% {
+    transform: rotate(-10deg);
+  }
+  30%,
+  50%,
+  70% {
+    transform: rotate(10deg);
+  }
+  80% {
+    transform: rotate(-8deg);
+  }
+  90% {
+    transform: rotate(8deg);
+  }
+}
+@keyframes shake-left-2 {
+  0%,
+  100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+  }
+  10% {
+    transform: rotate(8deg);
+  }
+  20%,
+  40%,
+  60% {
+    transform: rotate(-10deg);
+  }
+  30%,
+  50%,
+  70% {
+    transform: rotate(10deg);
+  }
+  80% {
+    transform: rotate(-8deg);
+  }
+  90% {
+    transform: rotate(8deg);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+*:hover ::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-tumbl) !important;
+}
+::-webkit-scrollbar-thumb {
+  transition: 0.2s !important;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 3px solid var(--body-background) !important;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--body-background);
+}
+
+.item-s {
+  background-image: linear-gradient(#fff0e1, #5e0c7300);
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
 }
