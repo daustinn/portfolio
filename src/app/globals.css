@@ -15,7 +15,7 @@ html {
     rgba(255, 132, 1, 0),
     rgba(255, 128, 1, 0.3)
   );
-  --body-background: #0a0907;
+  --body-background: #030302;
   --primary-glow: radial-gradient(rgba(255, 128, 1, 0.3), rgba(255, 175, 1, 0));
   --scrollbar-tumbl: #b3b3b369;
 }
