@@ -15,7 +15,7 @@ html {
     rgba(255, 132, 1, 0),
     rgba(255, 128, 1, 0.3)
   );
-  --body-background: #050505;
+  --body-background: #0a0907;
   --primary-glow: radial-gradient(rgba(255, 128, 1, 0.3), rgba(255, 175, 1, 0));
   --scrollbar-tumbl: #b3b3b369;
 }
@@ -128,7 +128,12 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 14px;
+  background-color: transparent !important;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent !important;
 }
 *:hover ::-webkit-scrollbar-thumb {
   background-color: var(--scrollbar-tumbl) !important;

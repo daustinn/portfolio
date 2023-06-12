@@ -6,7 +6,10 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Daustinn - Web Development',
-  description: 'Daustinn - Web Development'
+  description: 'Daustinn or David - Web Development',
+  icons: {
+    icon: '/avatar-square.png'
+  }
 }
 
 export default function RootLayout({
@@ -16,7 +19,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={cn('bg-[#050505]  scroll-smooth', inter.className)}>
+      <body
+        className={cn('bg-[--body-background] scroll-smooth', inter.className)}
+      >
         {children}
       </body>
     </html>
