@@ -496,60 +496,66 @@ function Home({}: Props) {
                   </div>
                 </section>
                 <section id="skills" className=" pt-24"></section>
+                <footer className="py-9 w-full border-t border-t-neutral-900">
+                  <div className="flex items-center justify-center h-full mx-auto w-[600px] max-w-full">
+                    <div className="flex flex-col gap-4">
+                      <h4 className="text-left font-extrabold text-xl tracking-tighter text-transparent bg-clip-text bg-gradient-to-br from-[#fcefff] to-[#ffb144]">
+                        With ❤️ from{' '}
+                        <a
+                          href="https://es.wikipedia.org/wiki/Per%C3%BA"
+                          target="_blank"
+                          referrerPolicy="no-referrer"
+                          className="hover:underline"
+                        >
+                          Perú
+                        </a>
+                      </h4>
+                      <p className="text-left text-sm text-neutral-400">
+                        Loosely designed in{' '}
+                        <a
+                          className="font-semibold hover:underline hover:text-orange-200 text-neutral-50"
+                          href=""
+                        >
+                          Invision Studio
+                        </a>{' '}
+                        and coded in{' '}
+                        <a
+                          className="font-semibold hover:underline hover:text-orange-200 text-neutral-50"
+                          href=""
+                        >
+                          Visual Studio Code
+                        </a>{' '}
+                        by yours truly. Built with{' '}
+                        <a
+                          className="font-semibold hover:underline hover:text-orange-200 text-neutral-50"
+                          href=""
+                        >
+                          Next.js
+                        </a>{' '}
+                        and{' '}
+                        <a
+                          className="font-semibold hover:underline hover:text-orange-200 text-neutral-50"
+                          href=""
+                        >
+                          Tailwind CSS
+                        </a>{' '}
+                        , deployed with{' '}
+                        <a
+                          className="font-semibold hover:underline hover:text-orange-200 text-neutral-50"
+                          href=""
+                        >
+                          Vercel
+                        </a>{' '}
+                        . All text is set in the Inter typeface.
+                      </p>
+                    </div>
+                  </div>
+                </footer>
               </div>
             </div>
           </div>
         </div>
-        <footer className="py-9 w-full border-t border-t-neutral-900">
-          <div className="flex items-center justify-center h-full mx-auto w-[600px] max-w-full">
-            <div className="flex flex-col gap-4">
-              <h4 className="text-center font-extrabold text-3xl tracking-tighter text-transparent bg-clip-text bg-gradient-to-br from-[#fcefff] to-[#7b0d94]">
-                With ❤️ from{' '}
-                <a href="#" className="hover:underline">
-                  Perú
-                </a>
-              </h4>
-              <p className="text-center text-sm text-neutral-400">
-                Loosely designed in{' '}
-                <a
-                  className="font-semibold hover:underline hover:text-orange-200 text-neutral-50"
-                  href=""
-                >
-                  Invision Studio
-                </a>{' '}
-                and coded in{' '}
-                <a
-                  className="font-semibold hover:underline hover:text-orange-200 text-neutral-50"
-                  href=""
-                >
-                  Visual Studio Code
-                </a>{' '}
-                by yours truly. Built with{' '}
-                <a
-                  className="font-semibold hover:underline hover:text-orange-200 text-neutral-50"
-                  href=""
-                >
-                  Next.js
-                </a>{' '}
-                and{' '}
-                <a
-                  className="font-semibold hover:underline hover:text-orange-200 text-neutral-50"
-                  href=""
-                >
-                  Tailwind CSS
-                </a>{' '}
-                , deployed with{' '}
-                <a
-                  className="font-semibold hover:underline hover:text-orange-200 text-neutral-50"
-                  href=""
-                >
-                  Vercel
-                </a>{' '}
-                . All text is set in the Inter typeface.
-              </p>
-            </div>
-          </div>
-        </footer>
+
         {/* </PerfectScrollbar> */}
       </div>
     </>
