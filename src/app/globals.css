@@ -5,6 +5,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -15,9 +16,11 @@ html {
     rgba(255, 132, 1, 0),
     rgba(255, 128, 1, 0.3)
   );
-  --body-background: #030302;
+
+  --body-background: #f6f6f6;
   --primary-glow: radial-gradient(rgba(255, 128, 1, 0.3), rgba(255, 175, 1, 0));
   --scrollbar-tumbl: #b3b3b369;
+  --gradient-title-custom: linear-gradient(#151414, #5e0c7300);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,6 +28,9 @@ html {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+    --body-background: #040404;
+    --gradient-title-custom: linear-gradient(#fff0e1, #5e0c7300);
+    color-scheme: dark;
   }
 }
 
@@ -127,29 +133,8 @@ body {
   }
 }
 
-::-webkit-scrollbar {
-  width: 14px;
-  background-color: transparent !important;
-}
-
-::-webkit-scrollbar-corner {
-  background-color: transparent !important;
-}
-*:hover ::-webkit-scrollbar-thumb {
-  background-color: var(--scrollbar-tumbl) !important;
-}
-::-webkit-scrollbar-thumb {
-  transition: 0.2s !important;
-  background-color: transparent;
-  border-radius: 10px;
-  border: 3px solid var(--body-background) !important;
-}
-::-webkit-scrollbar-track {
-  background-color: var(--body-background);
-}
-
-.item-s {
-  background-image: linear-gradient(#fff0e1, #5e0c7300);
+.text-gradient {
+  background-image: var(--gradient-title-custom);
   background-attachment: fixed;
   background-size: cover;
   position: relative;
