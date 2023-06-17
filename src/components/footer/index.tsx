@@ -23,35 +23,40 @@ export default function Footer() {
             Loosely designed in{' '}
             <a
               className="font-semibold hover:underline hover:text-orange-200 text-neutral-50"
-              href=""
+              href="https://www.invisionapp.com/"
+              target="_blank"
             >
               Invision Studio
             </a>{' '}
             and coded in{' '}
             <a
               className="font-semibold hover:underline hover:text-orange-200 text-neutral-50"
-              href=""
+              href="https://code.visualstudio.com/"
+              target="_blank"
             >
               Visual Studio Code
             </a>{' '}
             by yours truly. Built with{' '}
             <a
               className="font-semibold hover:underline hover:text-orange-200 text-neutral-50"
-              href=""
+              href="https://nextjs.org/"
+              target="_blank"
             >
               Next.js
             </a>{' '}
             and{' '}
             <a
               className="font-semibold hover:underline hover:text-orange-200 text-neutral-50"
-              href=""
+              href="https://tailwindcss.com/"
+              target="_blank"
             >
               Tailwind CSS
             </a>{' '}
             , deployed with{' '}
             <a
               className="font-semibold hover:underline hover:text-orange-200 text-neutral-50"
-              href=""
+              href="https://vercel.com/"
+              target="_blank"
             >
               Vercel
             </a>{' '}

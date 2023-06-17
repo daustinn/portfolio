@@ -8,6 +8,7 @@ const projects: ProjectType[] = [
     id: 2,
     image: '/projects/portfolio.png',
     statu: 'In production',
+    deploy: '/',
     repository: 'https://github.com/daustinndev/portfolio',
     title: 'Portfolio',
     description: (
