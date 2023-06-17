@@ -1,13 +1,12 @@
 import React from 'react'
 import HeaderFooterItem from './footer-item'
 import { GithubIcon, InstagramIcon, LinkedinIcon, SpotifyIcon } from '@icons'
-import Switcher from '@components/SwitcherDarkMode'
 
 type Props = {}
 
 export default function FooterHeader({}: Props) {
   return (
-    <div className="mt-auto">
+    <div className="mt-auto max-[700px]:mt-4">
       <div className="flex gap-3">
         <HeaderFooterItem
           href="https://github.com/daustinndev"
@@ -29,9 +28,6 @@ export default function FooterHeader({}: Props) {
           title="Spotify"
           icon={<SpotifyIcon className="p-1" />}
         />
-        <div>
-          <Switcher />
-        </div>
       </div>
     </div>
   )

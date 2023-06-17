@@ -21,7 +21,7 @@ const projects: ProjectType[] = [
         >
           Next js
         </Link>{' '}
-        ,{' '}
+        ,
         <Link
           className="hover:underline relative font-medium ml-1 transition-colors text-orange-50 hover:text-cyan-500"
           href="https://tailwindcss.com/"
@@ -30,7 +30,7 @@ const projects: ProjectType[] = [
         >
           Tailwindcss
         </Link>{' '}
-        and deployed in{' '}
+        and deployed in
         <Link
           className="hover:underline relative font-medium ml-1 transition-colors text-orange-50 hover:text-cyan-500"
           href="https://vercel.com/"
@@ -39,7 +39,6 @@ const projects: ProjectType[] = [
         >
           Vercel
         </Link>{' '}
-        <br />
         <br />
         Minimalist, modern and simple website.
       </>
@@ -109,15 +108,13 @@ const projects: ProjectType[] = [
 // component
 export default function ProjectsSection() {
   return (
-    <section id="projects" className="pt-24">
-      <div>
-        <h3 className="text-2xl font-semibold tracking-tight mb-3 pb-4 dark:text-orange-100/90 text-black/80">
-          Projects
-        </h3>
-        {projects.map((project) => (
-          <ItemProjects key={project.id} {...project} />
-        ))}
-      </div>
+    <section id="projects" className="pt-24 max-[800px]:pt-5">
+      <h3 className="text-2xl font-semibold tracking-tight mb-3 pb-4 dark:text-orange-100/90 text-black/80">
+        Projects
+      </h3>
+      {projects.map((project) => (
+        <ItemProjects key={project.id} {...project} />
+      ))}
     </section>
   )
 }

@@ -5,7 +5,10 @@ type Props = {}
 
 export default function AboutSection({}: Props) {
   return (
-    <section id="about" className="pt-24">
+    <section id="about" className="pt-24 max-[800px]:pt-0">
+      <h3 className="text-2xl max-[800px]:block hidden font-semibold tracking-tight mb-3 pb-4 dark:text-orange-100/90 text-black/80">
+        About
+      </h3>
       <div className="dark:text-neutral-400 text-neutral-900">
         <p className="mb-4 leading-6 text-base">
           Since 2019, I have immersed myself in modern design using

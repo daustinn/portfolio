@@ -12,13 +12,13 @@ export default function ItemProjects(project: ProjectType) {
           className="z-10 mb-2 mt-1 text-sm font-semibold uppercase tracking-wide  sm:col-span-2"
           aria-label="2018 to Present"
         >
-          <div className="rounded-lg overflow-hidden border-2 border-neutral-900 shadow-xl dark:shadow-black/50 shadow-black/20">
+          <div className="rounded-lg overflow-hidden max-[700px]:hidden border-2 border-neutral-900 shadow-xl dark:shadow-black/50 shadow-black/20">
             <Image
               className="opacity-80 object-cover w-full h-full sepia group-hover:sepia-0"
               src={project.image ? project.image : ''}
               alt=""
-              width={100}
-              height={100}
+              width={250}
+              height={250}
             />
           </div>
         </header>
@@ -51,7 +51,7 @@ export default function ItemProjects(project: ProjectType) {
           <p className="mt-2 text-sm leading-normal dark:text-orange-50/60 text-orange-950/80 dark:text-orange-50 [&>a]:text-orange-800 dark:[&>a]:text-orange-50 dark:hover:[&>a]:text-cyan-500 hover:[&>a]:text-cyan-700">
             {project.description}
           </p>
-          <div className="relative pt-2">
+          <div className="relative pt-2 ">
             {project.repository && (
               <a
                 referrerPolicy="no-referrer"
