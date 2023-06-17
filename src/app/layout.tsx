@@ -19,6 +19,9 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta property="og:image" content="/projects/portfolio.png"></meta>
+        <link rel="preload" as="image" href="/avatar-square-padding.png"></link>
+        <link rel="preload" as="image" href="/pointing-up.png"></link>
+        <link rel="preload" as="image" href="/wave.png"></link>
       </head>
       <body
         className={cn('bg-[--body-background] scroll-smooth', inter.className)}

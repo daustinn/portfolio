@@ -5,13 +5,14 @@ function HomeSection() {
       <section className="h-screen relative flex items-center max-w-[1000px] mx-auto">
         <div className="p-0 h-full text-center max-w-full page_center__diPtZ max-[700px]:after:hidden">
           <div className="flex items-center flex-col justify-center w-full gap-4">
-            <div className="opacity-90 w-36 h-36 -mb-4">
+            <div className="opacity-90 w-36 scale-150 h-36 -mb-4">
               <Image
-                src="/avatar-square.png"
+                src="/avatar-square-padding.png"
                 alt="Avatar - Daustinn"
                 priority
-                width={160}
-                height={160}
+                width={150}
+                height={150}
+                className="w-full h-full"
               />
             </div>
             <div className="flex flex-col -z-10 gap-3 max-[700px]:px-2">
