@@ -7,7 +7,7 @@ type Props = {}
 export default function FooterHeader({}: Props) {
   return (
     <div className="mt-auto max-[700px]:mt-4">
-      <div className="flex gap-3">
+      <div className="flex gap-3 items-center">
         <HeaderFooterItem
           href="https://github.com/daustinndev"
           title="Github"
@@ -28,6 +28,9 @@ export default function FooterHeader({}: Props) {
           title="Spotify"
           icon={<SpotifyIcon className="p-1" />}
         />
+        <div className="ml-auto text-sm bg dark:text-neutral-200 bg-neutral-800 rounded-2xl px-2 p-[2px]">
+          Website under development
+        </div>
       </div>
     </div>
   )
