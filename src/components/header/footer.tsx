@@ -7,7 +7,7 @@ type Props = {}
 export default function FooterHeader({}: Props) {
   return (
     <div className="mt-auto max-[700px]:mt-4">
-      <div className="flex max-[700px]:flex-col max-[700px]:items-start">
+      <div className="flex max-[700px]:flex-col items-center max-[700px]:items-start">
         <div className="flex items-center gap-3">
           <HeaderFooterItem
             href="https://github.com/daustinndev"
