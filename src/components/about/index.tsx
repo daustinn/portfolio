@@ -14,7 +14,7 @@ export default function AboutSection({}: Props) {
           Since 2019, I have immersed myself in modern design using
           <CustomLink href="https://www.invisionapp.com/">
             Invision Studio
-          </CustomLink>
+          </CustomLink>{' '}
           and thoroughly explored coding and web development. Collaborated with
           several local companies, creating online sales web applications. I
           highlight my contribution in
