@@ -27,7 +27,7 @@ export default function SkillsSection() {
       </h3>
       <div className="max-w-[380px] mx-auto">
         <div className="grid grid-cols-4  space-x-2 justify-center items-center">
-          <Skill title="Html" icon={<HtmlIcon />} />
+          <Skill title="HTML" icon={<HtmlIcon />} />
           <Skill title="CSS" icon={<CssIcon />} />
           <Skill title="Next js" icon={<NextjsIcon />} />
           <Skill title="React js" icon={<ReactJsIcon />} />
