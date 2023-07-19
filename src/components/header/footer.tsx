@@ -30,9 +30,6 @@ export default function FooterHeader({}: Props) {
             icon={<SpotifyIcon className="p-1" />}
           />
         </div>
-        <div className="ml-auto text-sm bg max-[700px]:ml-0 max-[700px]:mt-2 dark:text-neutral-200 bg-neutral-800 rounded-2xl px-2 p-[2px]">
-          Website under development
-        </div>
       </div>
     </div>
   )
