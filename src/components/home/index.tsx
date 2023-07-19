@@ -2,7 +2,7 @@ import Image from 'next/image'
 function HomeSection() {
   return (
     <>
-      <section className="h-screen relative flex items-center max-w-[1000px] mx-auto">
+      <section className="h-screen relative flex items-center justify-center max-w-[1000px] mx-auto">
         <div className="p-0 h-full text-center max-w-full page_center__diPtZ max-[700px]:after:hidden">
           <div className="flex items-center flex-col justify-center w-full gap-4">
             <div className="opacity-90 w-36 scale-150 h-36 -mb-4">
@@ -15,7 +15,7 @@ function HomeSection() {
                 className="w-full h-full"
               />
             </div>
-            <div className="flex flex-col -z-10 gap-3 max-[700px]:px-2">
+            <div className="flex flex-col -z-10 gap-3  max-[700px]:px-2">
               <h1 className="font-extrabold relative max-[700px]:text-7xl inline-block tracking-tighter text-transparent text-8xl bg-clip-text bg-gradient-to-b dark:from-[#fde089] dark:to-[#ec8b26] from-[#ffd24e] to-[#b96205]">
                 <span>{'Hi'}</span>
                 <span className="shake-left-right inline-flex">
@@ -26,7 +26,7 @@ function HomeSection() {
                     height={80}
                   />
                 </span>
-                <span>{", I'm David or Daustinn"}</span>
+                <span>{", I'm  Daustinn"}</span>
               </h1>
               <h2 className="dark:text-[#cecece] text-neutral-700 tracking-tight font-semibold text-2xl">
                 {'Software Engineer & Music Producer'}
