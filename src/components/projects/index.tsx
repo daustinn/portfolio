@@ -6,6 +6,54 @@ import { ProjectType } from './types'
 const projects: ProjectType[] = [
   {
     id: 2,
+    image: '/projects/your-library.png',
+    statu: 'In production',
+    deploy: 'https://books.daustinn.com',
+    repository: 'https://github.com/daustinn/books',
+    title: 'Your Library',
+    description: (
+      <>
+        This project is a{' '}
+        <Link
+          className="hover:underline relative font-medium ml-1 transition-colors text-orange-50 hover:text-cyan-500"
+          href="https://pruebastecnicas.com/"
+          target="_blank"
+          referrerPolicy="no-referrer"
+        >
+          Technical test
+        </Link>{' '}
+        initiated for Junior Developers by{' '}
+        <Link
+          className="hover:underline relative font-medium ml-1 transition-colors text-orange-50 hover:text-cyan-500"
+          href="https://github.com/midudev"
+          target="_blank"
+          referrerPolicy="no-referrer"
+        >
+          Midu Dev
+        </Link>{' '}
+        , it is made with{' '}
+        <Link
+          className="hover:underline relative font-medium ml-1 transition-colors text-orange-50 hover:text-cyan-500"
+          href="https://nextjs.org/"
+          target="_blank"
+          referrerPolicy="no-referrer"
+        >
+          Next js 13
+        </Link>{' '}
+        ,
+        <Link
+          className="hover:underline relative font-medium ml-1 transition-colors text-orange-50 hover:text-cyan-500"
+          href="https://nextjs.org/"
+          target="_blank"
+          referrerPolicy="no-referrer"
+        >
+          Tailwundcss
+        </Link>{' '}
+      </>
+    )
+  },
+  {
+    id: 2,
     image: '/projects/portfolio.png',
     statu: 'In production',
     deploy: '/',
