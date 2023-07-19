@@ -17,7 +17,7 @@ function HomeSection() {
             </div>
             <div className="flex flex-col -z-10 gap-3 max-[700px]:px-2">
               <h1 className="font-extrabold relative max-[700px]:text-7xl inline-block tracking-tighter text-transparent text-8xl bg-clip-text bg-gradient-to-b dark:from-[#fde089] dark:to-[#ec8b26] from-[#ffd24e] to-[#b96205]">
-                <span>{'¡Hi!'}</span>
+                <span>{'Hi'}</span>
                 <span className="shake-left-right inline-flex">
                   <Image
                     src="/wave.png"
