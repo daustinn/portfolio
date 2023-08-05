@@ -10,7 +10,7 @@ export default function FooterHeader({}: Props) {
       <div className="flex max-[700px]:flex-col items-center max-[700px]:items-start">
         <div className="flex items-center gap-3">
           <HeaderFooterItem
-            href="https://github.com/daustinndev"
+            href="https://github.com/daustinn"
             title="Github"
             icon={<GithubIcon />}
           />
