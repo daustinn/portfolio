@@ -15,7 +15,7 @@ export default function FooterHeader({}: Props) {
             icon={<GithubIcon />}
           />
           <HeaderFooterItem
-            href="https://www.instagram.com/daustinndev"
+            href="https://www.instagram.com/daustinn"
             title="Github"
             icon={<InstagramIcon />}
           />
